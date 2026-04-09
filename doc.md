@@ -13,6 +13,7 @@ Kromě kosmetických úprav (přejmenování sloupců, změna pořadí sloupců.
 ## Dimenzionální tabulky
 Dimenzionální tabulky vznikly oddělením sloupců nebo skupin sloupců z faktové tabulky za účelem přehlednější agregace a filtrování. Dimenzionální model odpovída principu star schema.
 Byly vytvořeny následující dimenzionální tabulky:
+
 - D_Time - časová dimenze
 - D_Product - informace o produktu, kategorie a podkategorie produktu
 - D_Geography - geografická dimenze (trhy, země, administrativní jednotky)
@@ -25,6 +26,7 @@ U tabulek D_Time, D_Geography a D_Product byly navíc vytvořeny vhodné hierarc
 # Vizuály reportu
 ## 1. stránka: Overview KPIs
 Tato stránka obsahuje grafy a hodnoty klíčových výkonnostních ukazatelů (KPI) celého podniku. Z této stránky je možné vyčíst následující údaje:
+
 - celkový prodej (obrat) za dané období
 - celkový zisk za dané období
 - celkový počet prodaných kusů zboží
@@ -38,37 +40,50 @@ Všechny vizuály této stránky lze filtrovat pomocí průřezů (slicerů).
 ## 2. stránka: Product performance
 Stránka je zaměřena na analýzu výkonnosti produktů.
 Obsahuje vizualizace klíčových metrik:
+
 - obrat
 - zisk
 - počet prodaných jednotek
+  
 Tyto metriky lze přepínat pomocí průřezu Key metrics.
 Dále je možné data analyzovat podle:
+
 - segmentu
 - druhu doručení
 - priority objednávky
+  
 Stránka umožňuje:
+
 - porovnání výkonu kategorií a podkategorií produktů
 - detailní pohled na jednotlivé produkty v různých dimenzích
 
 ## 3. stránka: Geography
 Hlavním prvkem je mapa zobrazující vybranou metriku podle geografické jednotky.
 Funkcionality stránky:
+
 - přepínání granularity (market → country → administrative sub-unit)
 - filtrování konkrétních geografických oblastí
 - časové filtrování
+  
 Uživatel může analyzovat:
+
 - obrat podle geografické jednotky
 - zisk podle geografické jednotky
 - počet prodaných jednotek
+  
 Všechny metriky lze dále členit podle segmentu.
 
 ## 4. stránka: Operational KPIs
 Stránka se zaměřuje na provozní ukazatele.
 Sledované metriky:
+
 - průměrné náklady na doručení objednávky (Average cost of shipping per order)
 - průměrná doba expedice (Average days to ship per order)
+  
 Data jsou zobrazena pomocí sloupcových grafů a lze je analyzovat podle:
+
 - priority objednávky
 - způsobu doručení
 - geografické oblasti
+  
 K dispozici jsou průřezy pro filtrování a výběr konkrétního ukazatele (Operational indicators).
