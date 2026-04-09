@@ -33,4 +33,8 @@ Tato stránka obsahuje grafy a hodnoty klíčových výkonnostních ukazatelů (
 - obrat podle trhu (koláčový graf)
 - obrat podle segmentu (sloupcový graf)
 
+Všechny vizuály této stránky lze filtrovat pomocí průřezů (slicerů).
 
+## 2. stránka: Product performance
+## 3. stránka: Geography
+## 4. stránka: Operational KPIs
