@@ -47,10 +47,16 @@ Tato stránka obsahuje grafy klíčových metrik (obrat, zisk, počet prodaných
 Tato stránka obsahuje vizuály zaměřené na zobrazění klíčových metrik v jednotlivých geografických jednotkách (trzích nebo území). Hlavní část stránky zabírá mapa, která zobrazuje vybranou klíčovou metriku podle geografiké jednotky. Na stránce se také nachází průřez pro výběr granularity zobrazení (market -> country -> administrative sub-unit). Další filtry umožňují agregovat jen vybrané geografické jednotky pro zlepšení přehlednosti nebo jen za dané časové období. Z této stránky je tedy možné vyčíst:
 - obrat podle geografické jednotky
 - zisk podle geografické jednotky
-- počet prodaných jednotek zboží geografické jednotky
+- počet prodaných jednotek zboží podle geografické jednotky
   
 - všechny tyto metriky jsou navíc rozdělené podle segmentu
 
 
 ## 4. stránka: Operational KPIs
-
+Tato stránka obsahuje údaje o operačních ukazatelích, tedy průměrné náklady na doručení objednávky (average cost of shipping per order) a průměrném počtu dní na expedici objednávky (average days to ship per order). Vizuály na stránce jsou sloupcové grafy zobrazující vybraný operační ukazatel (výběr přes průřez Operational indicators) rozdělený podle priority doručení, druhu doručení a trhu (geografické jednotky). Lze filtrovat přes průřezy. Ze stránky lze tedy zjistit:
+- průměrné náklady na doručení objednávky podle priority doručení
+- průměrné náklady na doručení objednávky podle druhu doručení
+- průměrné náklady na doručení objednávky podle trhu (geografické jednotky)
+- průměrný počet dní na expedici objednávky podle priority doručení
+- průměrný počet dní na expedici objednávky podle druhu doručení
+- průměrný počet dní na expedici objednávky podle trhu (geografické jednotky)
