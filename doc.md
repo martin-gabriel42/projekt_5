@@ -5,22 +5,22 @@ Tento doprovodný dokument obsahuje krátký popis návrhu a procesu tvorby Powe
 Faktová tabulka F_Sales vznikla načtením a následným upravením zdrojové tabulky v rámci Power Query.
 Kromě kosmetických úprav (přejmenování sloupců, změna pořadí sloupců...) došlo k následujícím úpravám:
 - sjednocení formátování sloupců s datumy (DD-MM-YYYY -> DD/MM/YYYY)
-- odstranění sloupců zbytečných pro účel projektu (jména zákazníků, discount)
-- změna datových typů
-- přidání vypočítaných sloupců (Profit margin (%))
+- odstranění sloupců zbytečných pro účel projektu (customer_name, discount)
+- úprava datových typů
+- přidání vypočítaných sloupců (Days to ship)
 - oddělení některých sloupců do samostatných dimenzionálních tabulek
 
 ## Dimenzionální tabulky
-Dimenzionální tabulky vznikly oddělením sloupců nebo skupin sloupců z faktové tabulky za účelem přehlednější agregace a filtrování. Dimenzionální model má podobu star schématu.
+Dimenzionální tabulky vznikly oddělením sloupců nebo skupin sloupců z faktové tabulky za účelem přehlednější agregace a filtrování. Dimenzionální model odpovída principu star schema.
 Byly vytvořeny následující dimenzionální tabulky:
 - D_Time - časová dimenze
-- D_Product - dimenze produktu, kategorie a podkategorie produktu
-- D_Geography - dimenze obsahující hodnoty trhů, zemí a administrativních podjednotkách zemí
-- D_Segment - dimenze s hodnotami jednotlivých segmentů zboží
+- D_Product - informace o produktu, kategorie a podkategorie produktu
+- D_Geography - geografická dimenze (trhy, země, administrativní jednotky)
+- D_Segment - segmenty zboží
 - D_Ship_mode - druhy doručení
 - D_Order_priority - priority doručení
 
-K tabulkám D_Time, D_Geography a D_Product byly vytvořeny vhodné hierarchie.
+U tabulek D_Time, D_Geography a D_Product byly navíc vytvořeny vhodné hierarchie pro podporu drill-down analýzy
 
 # Vizuály reportu
 ## 1. stránka: Overview KPIs
@@ -36,28 +36,39 @@ Tato stránka obsahuje grafy a hodnoty klíčových výkonnostních ukazatelů (
 Všechny vizuály této stránky lze filtrovat pomocí průřezů (slicerů).
 
 ## 2. stránka: Product performance
-Tato stránka obsahuje grafy klíčových metrik (obrat, zisk, počet prodaných jednotek) v závislosti na kategorii / podkategorii produktu. Zobrazené metriky lze přepínat pomocí průřezu Key metrics. Umožňuje tedy porovnání výkonnosti jednotlivých kategorií a podkategorií produktů v klíčových metrikách. Dále je pomcí průřezu Analytical dimension možné jednotlivé hodnoty rozdělit podle segmentu, druhu doručení a priority doručení. Z této stránky je tedy možné zjistit:
-- obrat podle podkategorie produktu
-- zisk podle podkategorie produkut
-- počet prodaných jednotek zboží podle produktu
-  
-- všechny tyto metriky lze navíc rozdělit podle segmentu, druhu doručení a priority doručení
+Stránka je zaměřena na analýzu výkonnosti produktů.
+Obsahuje vizualizace klíčových metrik:
+- obrat
+- zisk
+- počet prodaných jednotek
+Tyto metriky lze přepínat pomocí průřezu Key metrics.
+Dále je možné data analyzovat podle:
+- segmentu
+- druhu doručení
+- priority objednávky
+Stránka umožňuje:
+- porovnání výkonu kategorií a podkategorií produktů
+- detailní pohled na jednotlivé produkty v různých dimenzích
 
 ## 3. stránka: Geography
-Tato stránka obsahuje vizuály zaměřené na zobrazění klíčových metrik v jednotlivých geografických jednotkách (trzích nebo území). Hlavní část stránky zabírá mapa, která zobrazuje vybranou klíčovou metriku podle geografiké jednotky. Na stránce se také nachází průřez pro výběr granularity zobrazení (market -> country -> administrative sub-unit). Další filtry umožňují agregovat jen vybrané geografické jednotky pro zlepšení přehlednosti nebo jen za dané časové období. Z této stránky je tedy možné vyčíst:
+Hlavním prvkem je mapa zobrazující vybranou metriku podle geografické jednotky.
+Funkcionality stránky:
+- přepínání granularity (market → country → administrative sub-unit)
+- filtrování konkrétních geografických oblastí
+- časové filtrování
+Uživatel může analyzovat:
 - obrat podle geografické jednotky
 - zisk podle geografické jednotky
-- počet prodaných jednotek zboží podle geografické jednotky
-  
-- všechny tyto metriky jsou navíc rozdělené podle segmentu
-
+- počet prodaných jednotek
+Všechny metriky lze dále členit podle segmentu.
 
 ## 4. stránka: Operational KPIs
-Tato stránka obsahuje údaje o operačních ukazatelích, tedy průměrné náklady na doručení objednávky (average cost of shipping per order) a průměrném počtu dní na expedici objednávky (average days to ship per order). Vizuály na stránce jsou sloupcové grafy zobrazující vybraný operační ukazatel (výběr přes průřez Operational indicators) rozdělený podle priority doručení, druhu doručení a trhu (geografické jednotky). Lze filtrovat přes průřezy. Ze stránky lze tedy zjistit:
-- průměrné náklady na doručení objednávky podle priority doručení
-- průměrné náklady na doručení objednávky podle druhu doručení
-- průměrné náklady na doručení objednávky podle trhu (geografické jednotky)
-  
-- průměrný počet dní na expedici objednávky podle priority doručení
-- průměrný počet dní na expedici objednávky podle druhu doručení
-- průměrný počet dní na expedici objednávky podle trhu (geografické jednotky)
+Stránka se zaměřuje na provozní ukazatele.
+Sledované metriky:
+- průměrné náklady na doručení objednávky (Average cost of shipping per order)
+- průměrná doba expedice (Average days to ship per order)
+Data jsou zobrazena pomocí sloupcových grafů a lze je analyzovat podle:
+- priority objednávky
+- způsobu doručení
+- geografické oblasti
+K dispozici jsou průřezy pro filtrování a výběr konkrétního ukazatele (Operational indicators).
