@@ -36,5 +36,12 @@ Tato stránka obsahuje grafy a hodnoty klíčových výkonnostních ukazatelů (
 Všechny vizuály této stránky lze filtrovat pomocí průřezů (slicerů).
 
 ## 2. stránka: Product performance
+Tato stránka obsahuje grafy klíčových metrik (obrat, zisk, počet prodaných jednotek) v závislosti na kategorii / podkategorii produktu. Zobrazené metriky lze přepínat pomocí průřezu Key metrics. Umožňuje tedy porovnání výkonnosti jednotlivých kategorií a podkategorií produktů v klíčových metrikách. Dále je pomcí průřezu Analytical dimension možné jednotlivé hodnoty rozdělit podle segmentu, druhu doručení a prioritz doručení. Na stránce se nacházejí následující vizuály: 
+- sloupcový graf zobrazující vybranou klíčovou metriku v závislosti na podkategorii produktu
+- graf druhu treemap zobrazující vybranou klíčovou metriku v závislosti na podkategorii produktu
+- relevantní filtry
+
 ## 3. stránka: Geography
+
 ## 4. stránka: Operational KPIs
+
