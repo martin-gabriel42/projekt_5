@@ -57,6 +57,7 @@ Tato stránka obsahuje údaje o operačních ukazatelích, tedy průměrné nák
 - průměrné náklady na doručení objednávky podle priority doručení
 - průměrné náklady na doručení objednávky podle druhu doručení
 - průměrné náklady na doručení objednávky podle trhu (geografické jednotky)
+  
 - průměrný počet dní na expedici objednávky podle priority doručení
 - průměrný počet dní na expedici objednávky podle druhu doručení
 - průměrný počet dní na expedici objednávky podle trhu (geografické jednotky)
