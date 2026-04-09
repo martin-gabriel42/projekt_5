@@ -1,4 +1,4 @@
-Tento doprovodný dokument obsahuje krátký popis procesu tvorby Power BI souboru.
+Tento doprovodný dokument obsahuje krátký popis návrhu a procesu tvorby Power BI souboru.
 
 # Návrh datového modelu
 ## Faktová tabulka
