@@ -44,7 +44,7 @@ Tato stránka obsahuje grafy klíčových metrik (obrat, zisk, počet prodaných
 - všechny tyto metriky lze navíc rozdělit podle segmentu, druhu doručení a priority doručení
 
 ## 3. stránka: Geography
-Tato stránka obsahuje vizuály zaměřené na zobrazění klíčových metrik v jednotlivých geografických jednotkách (trzích nebo území). Hlavní část stránky zabírá mapa, která zobrazuje vybranou klíčovou metriku podle geografiké jednotky. Na stránce se také nachází průřez pro výběr granularity zobrazení (market -> country -> administrative sub-unit). Další filtry
+Tato stránka obsahuje vizuály zaměřené na zobrazění klíčových metrik v jednotlivých geografických jednotkách (trzích nebo území). Hlavní část stránky zabírá mapa, která zobrazuje vybranou klíčovou metriku podle geografiké jednotky. Na stránce se také nachází průřez pro výběr granularity zobrazení (market -> country -> administrative sub-unit). Další filtry umožňují agregovat jen vybrané geografické jednotky pro zlepšení přehlednosti nebo jen za dané časové období.
 
 ## 4. stránka: Operational KPIs
 
