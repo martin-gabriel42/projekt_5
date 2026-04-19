@@ -14,7 +14,7 @@ Dále je pro správné fungování Shape Map vizuálů na 1. a 3. straně je nut
 
 # Návrh datového modelu
 
-Datový model byl navrhunt tak, aby bylo možné pohodlně používat filtrování vizuálů.
+Datový model byl navrhnut tak, aby bylo možné pohodlně používat filtrování vizuálů.
 
 Tabulky byly vytvořeny a upraveny pro vypočítání hodnot a tvorbu measures do vizuálů.
 
