@@ -2,7 +2,7 @@ Tento doprovodný dokument obsahuje krátký popis návrhu a procesu tvorby Powe
 
 # Návod na spuštění
 
-Po otevření Power BI projektu je nutné přejít do Power Query. Ve skupině PATH se nachází parametr BasePath, který je nutné přenastavit na složku projektu (např. "C:\Users\gabma\Documents\Programming\ENGETO\projekt_5 - volby\"). Toto by mělo zaručit správné načtení zdrojových tabulek.
+Po otevření Power BI projektu je nutné přejít do Power Query. Ve skupině PATH se nachází parametr BasePath, který je nutné přenastavit na složku projektu (např. "C:\Users\gabma\Documents\Programming\ENGETO\projekt_5 - volby\\"). Toto by mělo zaručit správné načtení zdrojových tabulek.
 
 Dále je pro správné fungování Shape Map vizuálů na 1. a 3. straně je nutné použít soubor "cz topoJSON", který se nachází ve složce "Zdroje dat". Po označení proveďte následující kroky:
 
