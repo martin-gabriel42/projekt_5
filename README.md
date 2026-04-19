@@ -1,6 +1,6 @@
 # Projekt Power BI - ENGETO
 
-# Tento repozitář je 5. projekt do kurzu Datový analytik s Pythonem. Téma projektu jsou volby do poslanecké sněmovny parlamentu České Republiky v roce 2025.
+## Tento repozitář je 5. projekt do kurzu Datový analytik s Pythonem. Téma projektu jsou volby do poslanecké sněmovny parlamentu České Republiky v roce 2025.
 
 Repozitář obsahuje zazipovanou složku Projek_5.zip. Tato složka po extrahování obsahuje:
 - soubor doc.md - dokumentace projektu
