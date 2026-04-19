@@ -14,6 +14,7 @@ Odkazy na stáhnutí:
 - cnumnuts: https://www.volby.cz/opendata/ps2025/csv/cnumnuts.csv
 
 Soubor cz GeoJSON: https://simplemaps.com/gis/country/cz#admin1
+
 Konverze cz GeoJSON na cz topoJSON: https://mapshaper.org/
 
 ## Projekt_5.zip
