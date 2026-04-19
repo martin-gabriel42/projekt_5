@@ -1,6 +1,8 @@
 # Projekt Power BI - ENGETO
 
-Tento repozitář obsahuje zazipovanou složku Projek_5.zip. Tato složka po extrahování obsahuje:
+# Tento repozitář je 5. projekt do kurzu Datový analytik s Pythonem. Téma projektu jsou volby do poslanecké sněmovny parlamentu České Republiky v roce 2025.
+
+Repozitář obsahuje zazipovanou složku Projek_5.zip. Tato složka po extrahování obsahuje:
 - soubor doc.md - dokumentace projektu
 - soubor Power BI.pbix - hlavní výstup projektu
 - složku Zdroje dat - složka se zdrojovými daty pro projekt
