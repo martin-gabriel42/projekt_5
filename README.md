@@ -13,11 +13,11 @@ Odkazy na stáhnutí:
 - pst4p: https://www.volby.cz/opendata/ps2025/csv/pst4p.zip
 - cnumnuts: https://www.volby.cz/opendata/ps2025/csv/cnumnuts.csv
 
-Soubor cz GeoJSON: https://simplemaps.com/gis/country/cz#admin1
+Soubor "cz GeoJSON": https://simplemaps.com/gis/country/cz#admin1
 
-Konverze cz GeoJSON na cz topoJSON: https://mapshaper.org/
+Konverze "cz GeoJSON" na "cz topoJSON": https://mapshaper.org/
 
-## Projekt_5.zip
+## Obsah složky Projekt_5.zip
 
 ### Power BI.pbix
      
