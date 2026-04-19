@@ -65,7 +65,7 @@ Byly vytvořeny následující dimenzionální tabulky:
 
 U tabulky D_Lokace byla vytvořena hierarchie Kraj -> Okres
 
-# Vizuály reportu
+# Strany reportu
 ## 1. stránka: Přehled
 Tato stránka obsahuje základní přehled o vítězi voleb, klíčových hodnot a výsledků jednotlivých stran. Slouží zejména k rychlému zjištění nejdůležitějších hodnot a výsledků voleb.
 
